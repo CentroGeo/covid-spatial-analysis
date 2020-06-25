@@ -1,0 +1,24 @@
+name: null
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.7
+  - rasterio
+  - rasterstats
+  - geopandas
+  - descartes
+  - scikit-learn
+  - seaborn
+  - scikit-image
+  - jupyterlab
+  - matplotlib
+  - folium
+  - pysal
+  - hvplot
+  - bokeh
+  - cartopy
+  - geoviews
+  - geopy
+  - nodejs
+  - autopep8

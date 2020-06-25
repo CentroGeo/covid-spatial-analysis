@@ -1,0 +1,23 @@
+version: "3.7"
+
+services:
+  jupyterlab-server:
+    build:
+      args:
+        - username=datalab
+        - uid=1000
+        - gid=100
+      context: ../
+      dockerfile: docker/Dockerfile
+    ports:
+      - "8888:8888"
+    volumes:
+      - ../bin:/home/datalab/app/bin
+      - ../data:/home/datalab/app/data
+      - ../doc:/home/datalab/app/doc
+      - ../notebooks:/home/datalab/app/notebooks
+      - ../output:/home/datalab/app/output
+      - ../src:/home/datalab/app/src
+    init: true
+    stdin_open: true
+    tty: true
