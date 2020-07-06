@@ -22,3 +22,5 @@ dependencies:
   - geopy
   - nodejs
   - autopep8
+  - pip:
+    - contextily
