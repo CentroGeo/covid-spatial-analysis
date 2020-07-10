@@ -1,40 +1,19 @@
-# Python-Geo-Data-Science-Template
-Template para proyectos de GeoDataScience con Python
+# Análisis Espacial de la pandemia de COVID-19 en México
 
-## Crear un proyecto a partir del template
+Este repositorio contiene el código para realizar algunos análisis espaciales exploratorios para entender la evolución espacio-temporal de la pandemia COVID-19 en México. La idea es utilizar algunas herramientas sencillas de visualización y análisis de datos geográficos para explorar los [datos abiertos](https://www.gob.mx/salud/documentos/datos-abiertos-152127) que publica la Dirección General de Epidemiología.
 
-Para crear un repositorio a partir de este template sólo necesitas seguir [estas](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template) instrucciones de GitHub.
 
 ## Organización del repositorio
 
 La organización del proyecto es como sigue
 
-1. Cada proyecto debe estar en su propio repositorio
-2. Scripts externos o librerías compiladas van en la carpeta `bin/`
-3. Guarda los datos en la carpeta `data/`
-4. La documentación y otros archivos de texto en la carpeta `doc/`
-5. Todos los archivos relacionados con Docker en la carpeta `docker`
-6. Los notebooks van en la carpeta `notebooks/`.
-7. Los resultados y archivos intermedios en la carpeta `outputs/`.
-8. El código fuente, clases, funciones, et. guárdalos en la carpeta `src/`.
+1. La carpeta `notebooks/` contiene los notebooks de Python con los análisis y sus explicaciones
+2. En la carpeta `src/` está el código de las funciones auxiliares
+3. La carpeta `data/` contiene los datos necesarios
 
-## Librerías incluidas
 
-* [Rasterio](https://rasterio.readthedocs.io/en/latest/)
-* [Rasterstats](https://pythonhosted.org/rasterstats/)
-* [Geopandas](https://geopandas.org/)
-* [PySal](https://pysal.org/)
-* [scikit-learn](https://scikit-learn.org/stable/)
-* [scikit-image](https://scikit-image.org/)
-* [Folium](https://python-visualization.github.io/folium/)
-* [Seaborn](https://seaborn.pydata.org/)
-* [Bokeh](https://bokeh.org/)
-* [Holoviews](http://holoviews.org/)
-* [GeoViews](https://geoviews.org/)
-* [GeoPy](https://geopy.readthedocs.io/en/stable/)
+El repositorio está creado a partir del siguiente template [Python-Geo-Data-Science-Template](https://github.com/CentroGeo/Python-Geo-Data-Science-Template). A continuación están las instrucciones para echar a andar el código
 
-Además de las dependencias básicas como [numpy](https://numpy.org/), [pandas](https://pandas.pydata.org/) y [matplotlib](https://matplotlib.org/).
- 
 ## Instalación usando conda
 
 **Nota:** Estas son las instrucciones usando Linux aunque deberían funcionar igual para Mac. Para levantar todo en windows busca la dicumentación de conda para esa plataforma.
@@ -85,3 +64,4 @@ $ docker-compose up
 `docker-compose` va a levantar un `jupyter-lab` dentro del container. Puedes acceder a él desde `localhost:8080` en un browser. Pide un token que pudes copiar/pegar desde la terminal. En ese lab están disponibles todas las librerías.
 
 Igual que si instalaras via conda, si necesitas agregar más dependencias de Python, lo puedes hacer en `environment.yml`
+
